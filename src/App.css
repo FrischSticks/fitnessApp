@@ -1,0 +1,137 @@
+body {
+    font-family: 'Josefin Sans';
+    background-color: #FFFAFB;
+  }
+  
+  * {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 0px;
+  }
+  
+  .rightArrow,
+  .leftArrow {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    color: #FF2625;
+    transform: scale(1, 1);
+    transition: 0.3s all ease-in-out;
+  }
+  
+  .rightArrow {
+    right: 140px;
+  }
+  
+  .rightArrow:hover,
+  .leftArrow:hover {
+    transform: scale(1.25, 1.25);
+  }
+  
+  .reactHorizontalScrollingMenuWrapper {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .detailImage {
+    width: 729px;
+    height: 742px;
+  }
+  
+  .heroBannerImage {
+    position: absolute;
+    right: 0;
+    top:10px;
+    width: 700px;
+    height: 900px;
+    margin-top: -330px;
+    border-bottom-left-radius: 15%;
+  }
+  
+  .exerciseCard {
+    width: 400px;
+    height: 445px;
+    background: #fff;
+    border-bottom: 3px solid rgba(0, 0, 0, .1);
+    border-right: 3px solid rgba(0, 0, 0, .1);
+    border-radius: 1%;
+    border-bottom-right-radius: 7%;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-bottom: 10px;
+    transform: scale(1, 1);
+    transition: 0.3s all ease-in-out;
+  }
+  
+  .exerciseCard img {
+    height: 326px;
+    padding: 10px;
+  }
+  
+  .bodyPartCard {
+    transform: scale(1, 1);
+    transition: 0.3s all ease-in-out;
+  }
+  
+  .exerciseCard:hover,
+  .bodyPartCard:hover {
+    transform: scale(1.1, 1.1);
+  }
+  
+  .searchButton:hover {
+    color: #FF2625 !important;
+    border: 1px solid #FF2625 !important;
+  }
+  
+  .exerciseVideo {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 387px;
+    height: 381px;
+    text-decoration: none;
+  }
+  
+  @media screen and (max-width:1200px) {
+    .detailImage {
+      width: 300px;
+      height: 300px;
+    }
+  
+  
+    .reactHorizontalScrollingMenuScrollContainer {
+      width: 500px;
+    }
+  
+    .leftArrow,
+    .rightArrow {
+      position: static !important;
+    }
+  
+    .heroBannerImage {
+      display: none;
+    }
+  
+    .exerciseCard {
+      width: 320px;
+    }
+  
+    .exerciseVideo {
+      width: 320px;
+      height: 300px;
+    }
+  
+  }
+  
+  @media screen and (max-width:400px) {
+    .exerciseCard {
+      width: 280px;
+    }
+  }
